@@ -63,6 +63,30 @@ return fullName;
 
 console.log(makeName("Robert","\"Beto\"","O'Rourke"));
 
+// Make a name with middle initial
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    middleName = middleName + ".";
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+} else {
+  let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+}
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("Donald", "F", "Trump"));
+
+//which score is highest function
+function whoWon(homeTeam,awayTeam){
+  if(homeTeam>awayTeam){
+    return  "The Home Team Won";
+  } else{
+    return "The Away team won"
+  }
+}
+console.log(whoWon("89", "66"));
 
 
   </script>
